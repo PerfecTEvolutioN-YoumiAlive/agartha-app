@@ -1,0 +1,28 @@
+.feed {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.feed > .feed__posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+.feed > .feed__posts::-webkit-scrollbar {
+  display: none;
+}
+
+.feed > *:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .feed > *:nth-child(2){
+    display: flex;
+  }
+}

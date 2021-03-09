@@ -1,0 +1,32 @@
+GET http://localhost:9000/
+
+###
+
+GET http://localhost:9000/accounts/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwM2M5M2MxOGI5MWMyMmIzY2MxYWM3NyIsImlhdCI6MTYxNDY0OTAxN30.kuTilm881B1eR_dQWzSvBhF3f69wIFlZayn4oCwcq8Q
+
+###
+
+GET http://localhost:9000/api/headers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwM2M5M2MxOGI5MWMyMmIzY2MxYWM3NyIsImlhdCI6MTYxNDY0ODY0NX0.fzHhYMGGqVx44eso-8CIRypuYlheqx56s9hLEIGJ644
+
+###
+
+POST http://localhost:9000/accounts/signup
+Content-Type: application/json
+
+{
+  "name": "Sonny Parker",
+  "username": "sonnycarlos",
+  "password": "asd"
+}
+
+###
+
+POST http://localhost:9000/accounts/signin
+Content-Type: application/json
+
+{
+  "username": "sonnyparker",
+  "password": "asd"
+}

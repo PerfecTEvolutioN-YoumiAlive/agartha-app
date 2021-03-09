@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation > *:not(:last-child) {
+  margin-left: 15px;
+}
+
+.navigation > .icon {
+  height: 25px;
+}
+
+.navigation > .icon:last-child {
+  transform: rotate(90deg) !important;
+  margin: 0 10px 0 8px;
+}
+
+.navigation__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border: 1.5px solid #707070;
+  border-radius: 50px;
+}
+
+.navigation__search > .icon {
+  height: 14px;
+}
+
+.navigation__search > input {
+  outline: none;
+  border: none;
+  color: #707070;
+}
+
+.navigation__search > button {
+  display: none;
+}

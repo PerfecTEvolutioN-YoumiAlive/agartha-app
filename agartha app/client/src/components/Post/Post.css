@@ -1,0 +1,94 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid #707070;
+  color: #707070;
+}
+
+.post > input, textarea {
+  padding: 7px;
+}
+
+.post > button {
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 7px 15px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: #909090;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post > .btn--disabled {
+  background-color: #ccc;
+}
+
+.post > button:enabled:hover {
+  background-color: #707070;
+}
+
+/* Post Header */
+
+.post > .post__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.post__header > .post__category {
+  color: #909090;
+  font-size: 12.5px;
+}
+
+.post__header > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post__header > div > .post__author {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.post__header > div > .post__createdDate {
+  color: #909090;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* Post Body */
+
+.post > .post__body > .post__title {
+  font-size: 16.5px;
+}
+
+.post > .post__body > .post__content {
+  margin: 20px 0;
+  line-height: 21px;
+  font-size: 13px;
+}
+
+/* Post Footer */
+
+.post > .post__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__footer > .icon {
+  width: 20px;
+}
+
+.post__footer > .post__info > a {
+  margin-left: 14px;
+  font-size: 13px;
+}

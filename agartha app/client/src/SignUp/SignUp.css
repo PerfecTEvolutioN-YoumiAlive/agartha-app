@@ -1,0 +1,75 @@
+.signUp {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+h1 {
+  padding: 20px 20px 0;
+  color: #212529;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+form > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form > div input {
+  padding: 5px;
+}
+
+form > div > button {
+  margin-top: 15px;
+  padding: 7.5px;
+}
+
+.signUp > .signUp__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f0f5f8;
+}
+
+.signUp > .signUp__footer > p {
+  color: #555;
+  font-size: 14px;
+}
+
+.signUp > .signUp__footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signUp > .signUp__footer a:hover {
+  text-decoration: underline;
+}
